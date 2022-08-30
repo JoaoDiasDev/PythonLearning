@@ -1,0 +1,38 @@
+Conditional Cheat Sheet
+Conditional Cheat Sheet
+In the previous video, you saw the built-in Python operator that allows you to compare values and the logical operators that you can use to combine values. You also learned how to use operators in if-else-elif blocks. 
+
+There's a lot to learn, but with practice, you'll remember everything more easily. In the meantime, this handy cheat sheet will give you all the information you need at a glance. 
+
+Comparison Operators
+a == b: A is equal to b.
+
+a != b: A is different from b.
+
+a < b: A is less than b.
+
+a <= b: A is less than or equal to b.
+
+a > b: A is greater than b.
+
+a >= b: A is greater than or equal to b.
+
+Logical operators
+a and b: True if a and b are both true. Otherwise, it is false.
+
+a or b: A or b or both are true if they are true. If both are false, they are false.
+
+not a: true if a is false, false if true.
+
+Branch Blocks
+
+In Python, you use if, else, and elif to branch your code. Here is the branching syntax:
+
+if condition1:
+	if-block
+elif condition2:
+	elif-block
+else:
+	else-block
+
+Remember: if condition1 is true, the if block is executed. If condition1 is false and condition2 is true, the elif block is executed. The else block is executed when all the specified conditions are false.

@@ -1,0 +1,10 @@
+Summary of if statements
+You can use the concept of branching to force your code to change the order of execution based on the values of variables. You can use an if statement to evaluate the comparison. It starts with the if keyword and follows the comparison. Ends the line with a colon. The body of the if statement is then indented to the right. If the comparison is True, the code inside the if body is executed. If the comparison evaluates to False, the code block is skipped and not executed.
+
+Else statement and modulo operator
+I just covered an if statement that runs the code if the evaluation is true and skips the code if it is false. But if the evaluation is false, how do you get your code to do something else? You can do this using the else statement. The else statement follows the if block and consists of the else keyword and a colon. The body of the else statement is indented to the right, which is expected if the above if statement is not executed.
+
+We also covered the modulo operator, which is represented by a percent sign (%). This operator performs integer division, but returns only the remainder of this division operation. If you divide 5 by 2, the share is 2 and the rest is 1. Two 2s go into 5 and 1 remains. Therefore, 5%2 returns 1. Dividing 10 by 5 results in a share of 2 with no remainder. Because 5 can go in twice at 10 and there is nothing left. In this case, 10%2 returns 0 as there is no remainder.
+
+More complex branching with the elif statement
+elif statements based on if and else blocks, which allow you to branch code based on the evaluation of one statement, allow you to perform more comparisons to perform more complex branches. Much like the if statement, the elif statement begins with the elif keyword, followed by a comparison to be evaluated. This is followed by a colon and the next line of code blocks are indented to the right. The elif statement must come after the if statement  and is evaluated only if the if statement evaluates to false. Building complex branches in your code, including multiple elif statements, allows you to do all sorts of powerful things!

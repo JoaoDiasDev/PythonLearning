@@ -1,0 +1,4 @@
+Return value using function
+Sometimes we don't want to simply execute and end a function. You might want a function that manipulates the data we pass in and then returns the result. The concept of return values is useful here. We use the return keyword to tell the function to pass data back from the function. When you call the function, you can store the returned value in a variable. The return value makes the function more flexible and powerful, allowing you to reuse it and call it multiple times.
+
+A function can also return multiple values. Don't forget to store all the return values in a variable! You can also make sure that the function doesn't return anything. In this case, the function simply terminates

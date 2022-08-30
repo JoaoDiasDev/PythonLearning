@@ -1,0 +1,11 @@
+Comparison Operators
+In Python, you can use the comparison operator to compare values. When the comparison is made, Python returns a Boolean result, or simply true or false. 
+
+To check if two values are equal, you can use the equal sign operator (==). 
+
+To verify that two values are not equal, you can use the non-equality operator (!=). 
+
+You can also use > and < to verify that the values are greater or smaller than each other. If you try to compare incompatible data types, such as checking if a string is larger than an integer, Python will raise a TypeError. 
+
+You can use logical operators with comparison operators to combine statements to perform very complex comparisons. These logical operators are and, or, and not. When you use the and operator, both sides of the evaluated statement must be true for the entire statement to be true. When using the or operator, if either side of the comparison is true, the entire statement is true. Finally, the not operator inverts the value of the statement immediately following it. Therefore, if the statement evaluates to true and precedes it with the not operator, it becomes false.
+
