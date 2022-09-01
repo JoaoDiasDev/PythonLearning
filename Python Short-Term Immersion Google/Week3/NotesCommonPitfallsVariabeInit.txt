@@ -1,0 +1,4 @@
+Common pitfalls of variable initialization
+Beware of the common mistake of forgetting to initialize variables. If you try to use a variable without initializing it first, a NameError is thrown. This is a Python interpreter that catches mistakes and tells you that you are using undefined variables. The fix is very simple. Initialize the variable by assigning a value to it before using it.
+
+Another common mistake that can be a little tricky to spot is forgetting to initialize a variable to the correct value. If you use a variable first in your code, and then reuse it later in a loop without first setting it to the value you want, your code might do something unexpected. Don't forget to initialize the variable before using it!

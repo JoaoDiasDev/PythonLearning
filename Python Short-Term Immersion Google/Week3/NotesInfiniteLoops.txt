@@ -1,0 +1,4 @@
+Infinite loops and code blocks
+Another easy mistake that can occur when using loops is to introduce an infinite loop. An infinite loop means that the block of code in the loop continues to execute and does not stop. This can happen when the condition being evaluated in the while loop does not change. Pay close attention to the variables and the possible values they can take. Think about an unexpected value, such as 0.
+
+In the Coursera code block, "The assessment took more than 5 seconds to complete." You may receive an error message that says: This means that the code encountered an infinite loop and timed out after 5 seconds. To find where the infinite loop is located, you need to look closely at your code and variables.
