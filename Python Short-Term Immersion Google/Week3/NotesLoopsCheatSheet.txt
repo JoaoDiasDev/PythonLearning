@@ -1,0 +1,53 @@
+Loop Cheat Sheet
+Check out the while loop and for loop syntax below.
+
+while loop
+The while loop executes the body of the loop while the condition remains true.
+
+Syntax:
+while condition:
+    body
+
+Things to keep in mind!
+
+Variable initialization failed.  Ensure that all variables used in the conditions in the loop are initialized before the loop.
+
+Unintentional infinite loops.  Make sure that the body of the loop modifies the variables used in the condition, so that the loop eventually terminates for all possible variable values.
+
+Typical uses:
+
+The while loop is often used when you don't know how many operations to perform and you need to check the condition each time you iterate.
+
+for loop
+The for loop iterates over a sequence of elements to execute the loop body for each element in the sequence.
+
+Syntax:
+for variable in sequence
+    body
+    
+range() function:
+
+range() produces a series of integers. You can use one, two, or three parameters.
+
+range(n): 0, 1, 2, ... n-1
+
+range(x,y): x, x+1, x+2, ... y-1
+
+range(p,q,r): p, p+r, p+2r, p+3r, ... q-1 (if valid increment)
+
+Common pitfalls:
+
+I forgot that the upper bound of range() is not included.
+
+Repeat a non-sequence. Integers cannot be repeated. Strings can be repeated character-by-character, but this may not be what you want.
+
+Typical uses:
+
+The for loop is often used when you have a predefined sequence or a range of numbers to repeat.
+
+Interruption and continuation
+You can use the break keyword to break both the while and for loops. Typically, you do this to abort the cycle due to a separate condition.
+
+You can use the continue keyword to skip the current iteration and continue with the next iteration. This is usually used to move forward when some element of a sequence is unrelated.
+
+If you want to know more, check out the wiki page for loops.

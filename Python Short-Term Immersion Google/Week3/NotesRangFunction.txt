@@ -1,0 +1,13 @@
+Take a closer look at the range() function
+Previously we used the range() function by passing a single parameter and at 0 we generated a sequence of numbers that were 1 smaller than what we specified. However, the range() function can do more than that. You can pass two parameters: The first parameter specifies the start point and the second parameter specifies the end point. Don't forget that the generated sequence does not include the last element. Stops before the specified parameter.
+
+The range() function can also use a third parameter. This third parameter allows you to change the size of each step. So instead of creating a series of numbers that increment by 1, you can create a series of numbers that increment by 5.
+
+To quickly summarize the range() function when passing one, two, or three parameters:
+
+One parameter produces a sequence at 0 that is one less than the parameter.
+
+The two parameters produce one sequence in the first parameter, one smaller than the second.
+
+The three parameters create a sequence that starts at the first parameter and stops before the second, but this time increments each step by the third parameter.
+

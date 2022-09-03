@@ -1,0 +1,19 @@
+Additional recursive sources
+Additional recursive sources
+In a past video, you saw the basic concepts of recursive functions.
+
+Recursive functions must contain a recursive case and a base case. The recursive case calls the function back with a different value. The base case returns a value without calling the same function.
+
+Recursive functions typically have the following structure:
+
+def recursive_function(parameters):
+    if base_case_condition(parameters):
+        return base_case_value
+    recursive_function(modified_parameters)
+For more information about recursion, check out the following resources:
+
+Wikipedia recursive pages
+https://en.wikipedia.org/wiki/Recursion
+
+See what happens when you search for recursion on Google.
+https://www.google.com/search?q=recursion
