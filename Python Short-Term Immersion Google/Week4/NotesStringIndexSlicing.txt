@@ -1,0 +1,22 @@
+String indexing and slicing
+String indexing allows you to access individual characters in a string. You can do this by using square brackets and the location or index of the characters you want to access. It's important to remember that Python starts indexes at 0. So to access the first character of the string, use index [0]. If you try to access an index that is larger than the string length, an IndexError is thrown. Because you're trying to access something that doesn't exist! You can also use negative values to access indexes from the end of the string to the beginning of the string. The index [-1] accesses the last character of the string, and the index [-2] accesses the last to second character.
+
+You can also access a portion of a string called a slice or substring. This allows access to multiple characters in the string. You can do this by creating a range by using a colon as a delimiter between the beginning and end of the range, such as [2:5].
+
+This range is similar to the range() function we've seen before. This includes the first number, but moves to a number that is one less than the last one. For example:
+
+>>> fruit = "Mangosteen" >>> fruit[1:4] 'ang'
+
+The slice contains the characters at index 1 and excludes the characters at index 4. You can also specify only one end of the range to easily reference a substring at the beginning or end of a string. For example, if you only provide the end of a range:
+
+>>> fruit[:5] 'Mango'
+
+This excluded index 5 and provided characters from the beginning of the string to index 4. On the other hand, this example provides a character that contains index 5 until the end of the string.
+
+>>> fruit[5:] 'steen'
+
+You may have noticed that if you put both of these results together, you can get the original string back!
+
+>>> fruit[:5] + fruit[5:] 'Mangosteen'
+
+That's cool!

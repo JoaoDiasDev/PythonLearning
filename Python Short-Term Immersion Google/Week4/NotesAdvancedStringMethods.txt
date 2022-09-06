@@ -1,0 +1,17 @@
+Advanced string methods
+We've already covered a lot of string class methods, so let's continue to run more advanced methods based on that.
+
+The string method lower returns a string in which all characters have been changed to lowercase. The opposite approach is the upper method, which returns the string in all uppercase. Like the previous method, you call it from a string using dot notation like "this is a string".upper(). This returns the string "THIS IS A STRING". Someone can type in a mix of all lowercase, all, or uppercase letters, which can be very handy when verifying user input.
+
+You can use the strip method to remove surrounding spaces from a string. Spaces include spaces, tabs, and newline characters. You can also use the lstrip and rstrip methods to remove spaces only on the left or right side of the string, respectively.
+
+The method count can be used to return the number of times a substring appears in a string. This can be useful for figuring out how many characters appear in a string, or for calculating the number of times a particular word appears in a sentence or paragraph.
+
+If you want to check if the string ends with a given substring, you can use the endswith method. If there is a substring at the end of the string, it returns true; otherwise, it returns false.
+
+The isnumeric method can check if a string consists of only numbers. If the string contains only numbers, the method returns true. You can use it to check if the string contains a number before passing it to the int() function to convert the string to an integer to avoid errors. That's useful!
+
+Earlier, we looked at string concatenation using the plus sign. You can also use the join method to concatenate strings. This method is called on the string that you want to use to combine a list of strings. This method takes the list of strings to combine as a parameter and returns a new string consisting of each string in the combined list using the initial string. For example, " ".join(["This","is","a","sentence"]) returns the string "This is a sentence".
+
+The opposite of the join method is the split method. This allows you to split a string into a list of strings. By default, it is split by a space character. You can also pass parameters to split them into different characters.
+
