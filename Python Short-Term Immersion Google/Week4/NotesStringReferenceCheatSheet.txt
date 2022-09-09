@@ -1,0 +1,176 @@
+String Reference Cheat Sheet
+String Reference Cheat Sheet
+In Python, there are many things you can do with strings. In this cheat sheet you will find the most common string operations and string methods.
+
+String operations
+Returns the length of the string len(string).
+
+Iterates over each character in the string for character.
+
+If substring in string Check if the substring is part of a string.
+
+Accesses characters at index i of the string, starting with string[i] 0.
+
+string[i:j] accesses substrings that start at index i and end at index j-1. If i is omitted, it is 0 by default. If j is omitted, it is len(string) by default.
+
+String method
+string.lower() / string.upper() Returns a copy of a string containing all lowercase/uppercase letters.
+
+string.lstrip() / string.rstrip() / string.strip() returns a copy of the string without left/right/left or right spaces.
+
+string.count(substring) Returns the number of times a substring exists in the string.
+
+string.isnumeric() returns true if the string contains only numbers. Otherwise, it returns false.
+
+Returns true if the string string.isalpha() contains only alphabetic characters. Otherwise, it returns false.
+
+string.split() / string.split(delimiter) Returns a list of substrings separated by spaces/delimiters.
+
+string.replace(old, new) Returns a new string in which all old items have been replaced by new.
+
+delimiter.join(list of strings) Returns a new string in which all strings are combined by a delimiter.
+
+Check the official documentation https://docs.python.org/3/library/stdtypes.html#string-methods
+
+String Formatting Cheat Sheet
+String Formatting Cheat Sheet
+Python provides a variety of ways to format strings. The video explained the format() method. In this post, we will focus on three ways to format strings. In this process, you only need to know the format() method. However, you can find one of the three on the Internet, so it's good to know that something else exists.
+
+Using the format() method
+The format method returns a copy of the string in which the {} placeholder has been replaced by the variable value. These variables are converted to strings if they are not already strings. Empty placeholders are replaced by variables passed to format in the same order.
+
+# "base string with {} placeholders".format(variables)
+
+example = "format() method"
+
+formatted_string = "this is an example of using the {} on a string".format(example)
+
+print(formatted_string)
+
+"""Outputs:
+this is an example of using the format() method on a string
+"""
+
+If the placeholder represents a number, it is replaced by a variable corresponding to that order (starting at 0).
+
+# "{0} {1}".format(first, second)
+
+first = "apple"
+second = "banana"
+third = "carrot"
+
+formatted_string = "{0} {2} {1}".format(first, second, third)
+
+print(formatted_string)
+
+"""Outputs:
+apple carrot banana
+"""
+
+If a placeholder represents a field name, it is replaced by a variable corresponding to that field name. Therefore, you must pass the parameters that you want to format to indicate the field names.
+
+# "{var1} {var2}".format(var1=value1, var2=value2)
+
+"{:exp1} {:exp2}".format(value1, value2)
+
+If the placeholder contains a colon, what follows the colon is a formatting expression. Check below for expression references.
+
+Official documentation https://docs.python.org/3/library/string.html#formatstrings
+
+# {:d} integer value
+'{:d}'.format(10.5) → '10'
+
+Formatting Expressions
+Expr
+
+meaning
+
+example
+
+{:d}
+
+Integer Value
+
+'{:d}'.format(10.5) → '10'
+
+{:.2f}
+
+Floating point with a lot of decimal points
+
+'{:.2f}'.format(0.5) → '0.50'
+
+{:.2s}
+
+A string that contains many characters
+
+'{:.2s}'.format('Python') → 'Py'
+
+{:<6s}
+
+Left-aligned string with many spaces
+
+'{:<6s}'.format('Py') → 'Py    '
+
+{:>6s}
+
+Right-aligned string with many spaces
+
+'{:>6s}'.format('Py') → '    Py'
+
+{:^6s}
+
+A string in the middle of many spaces
+
+'{:^6s}'.format('Py') → '  Py  '
+
+Official Doc https://docs.python.org/3/library/string.html#format-specification-mini-language
+
+Formatting the previous string (optional)
+The format() method was introduced in Python 2.6. Before that, a similar result could be achieved using the % modulo operator. This method is no longer recommended for new code, but you might find it in someone else's code. It looks like this:
+
+"base string with %s placeholder" % variable
+
+The % modulo operator returns a copy of a string in which a formatting expression followed by a placeholder denoted by % is replaced by a variable after the operator.
+
+ "base string with %d and %d placeholders" % (value1, value2)
+
+To replace more than one value, you must write the value between parentheses. The formatting expression must match the value type.
+
+"%(var1) %(var2)" % {var1:value1, var2:value2}
+
+Variables can be replaced by names using dictionary syntax (we'll learn about dictionaries in the next video).
+
+"Item: %s - Amount: %d - Price: %.2f" % (item, amount, price)
+
+The formatting expression is mostly the same as the expression in the format() method. 
+
+Check the official documentation https://docs.python.org/3/library/stdtypes.html#old-string-formatting
+
+Formatted string literals (optional)
+This feature was added in Python 3.6 and is not much used yet. Again, it's included here in case it happens later, but it's not necessary for this or any future course.
+
+A formatted string literal or f-string is a string that begins with 'f' or 'F' before the quotation marks. These strings can contain {} placeholders that use the same expression used in the format method string.
+
+An important difference from the format method is that instead of getting the value from the parameter, you get the value of the variable from the current context.
+
+Yes:
+
+>>> name = "Micah"
+
+>>> print(f'Hello {name}')
+
+Hello Micah
+
+ 
+
+>>> item = "Purple Cup"
+
+>>> amount = 5
+
+>>> price = amount * 3.25
+
+>>> print(f'Item: {item} - Amount: {amount} - Price: {price:.2f}')
+
+Item: Purple Cup - Amount: 5 - Price: 16.25
+
+Check the official documentation https://docs.python.org/3/reference/lexical_analysis.html#f-strings
