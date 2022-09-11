@@ -1,0 +1,2 @@
+Iterate through a list using enumeration
+I showed an example of iterating through a list when dealing with a for loop. This allows you to iterate through each element in the list to expose the element as a variable in a for loop. But how do you access the elements in a list with the element index in question? You can do this by using the enumerate() function. The enumerate() function takes a list as a parameter and returns a tuple for each element in the list. The first value of the tuple is the index and the second value is the element itself.

@@ -1,0 +1,4 @@
+Pre-iteration
+As with strings, lists, and tuples, you can use a for loop to iterate through the dictionary. This repeats the key sequences in the dictionary. To access that value associated with a key, you can use the key as an index. Alternatively, you can use the items method in the  dictionary, such as dictionary.items(). This method returns a tuple for each element in the dictionary. Here the first element of the tuple is the key and the second element is the value.
+
+If you only want to access the keys in the dictionary, you can use the dictionary.keys(), the keys() method in the dictionary. If you only want values, you can use the values() method, dictionary.values().

@@ -1,0 +1,35 @@
+Dictionary Method Cheat Sheet
+Dictionary Method Cheat Sheet
+definition
+
+x = {key1:value1, key2:value2}
+
+operation
+
+len(dictionary)—Returns the number of entries in the dictionary.
+
+for key in dictionary - Iterates over each key in the dictionary.
+
+for key, value in dictionary.items() - Iterates over each key, value pair in the dictionary.
+
+if key in dictionary - Checks if the key exists in a dictionary.
+
+Dictionary[key]—Access an entry with the dictionary's key.
+
+Dictionary[key] = value - Sets the value associated with the key.
+
+del Dictionary[key] - Removes the keyed entry from the dictionary.
+
+method
+
+dict.get(key, default) - Returns the element corresponding to the key, or a default value if it does not exist.
+
+dict.keys()—Returns a sequence containing a key from a dictionary.
+
+dict.values()—Returns a sequence containing values from a dictionary.
+
+dict.update(other_dictionary) - Updates a dictionary with entries taken from other dictionaries. The existing item is replaced. A new item is added.
+
+dict.clear() - Removes all entries in the dictionary.
+
+Check out the official documentation on pre-operations and methods. https://docs.python.org/3/library/stdtypes.html#mapping-types-dict

@@ -1,0 +1,46 @@
+List and tuple operation cheat sheet
+List and tuple operation cheat sheet
+Since lists and tuples are both sequences, they share multiple sequence operations. However, since the list is mutable, there are also a number of ways that are specific to the list. This cheat sheet provides a description of common operations first, and secondly, a list-by-list operation.
+
+Common sequence operations
+Returns the length of the len(sequence) sequence.
+
+Iterates over each element in the for element in sequence sequence.
+
+Verify that the if element in sequence is part of the sequence.
+
+Starting at sequence[i] 0, access the element at index i of the sequence.
+
+sequence[i:j] accesses slices that start at index i and end at index j-1. If i is omitted, it is 0 by default. If j is omitted, it is len(sequence) by default.
+
+For indexes, repeat element in enumerate(sequence) simultaneously for both the index and the elements in the sequence.
+
+Check the official documentation on sequence operations. https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range
+
+List-specific operations and methods
+list[i] = Replace the element of x index i with x.
+
+list.append(x) Inserts an x at the end of the list.
+
+list.insert(i, x) Inserts x into index i.
+
+list.pop(i) Returns the element from index i and removes it from the list as well. If i is omitted, the last element is returned and removed.
+
+list.remove(x) Removes the first item of x from the list.
+
+list.sort() sorts the items in the list.
+
+list.reverse() Reverses the order of the list items.
+
+list.clear() Removes all entries in the list.
+
+Make a copy of the list.copy().
+
+list.extend(other_list) Adds all elements of the other_list to the end of the list.
+
+Most of these methods stem from the fact that lists are mutable sequences. For more information, see the official documentation and list-specific documentation on mutable sequences. https://docs.python.org/3/library/stdtypes.html#lists
+
+Understanding the list
+[expression for variable in sequence] Creates a new list based on a given sequence. Each element is the result of a given expression.
+
+[expression for variable in sequence if condition] Creates a new list based on a given sequence. Each element is the result of a given expression. The element is added only if the condition is true.
