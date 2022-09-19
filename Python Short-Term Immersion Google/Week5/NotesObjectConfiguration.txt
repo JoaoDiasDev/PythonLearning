@@ -1,0 +1,19 @@
+Object Configuration
+There may be situations where two different classes are involved, but inheritance does not proceed. This is called configuration. Here, one class uses code contained in another class. For example, imagine that you have a Package class that represents a software package. This includes attributes for the software package, such as name, version, and size. There is also a Repository class that represents all the packages that are available for installation. There is no inheritance relationship between the two classes, but they are related. The Repository class contains a list or dictionary of packages contained in the repository. Let's look at an example of a Repository class definition.
+
+>>> class Repository:
+...      def __init__(self):
+...          self.packages = {}
+...      def add_package(self, package):
+...          self.packages[package.name] = package
+...      def total_size(self):
+...          result = 0
+...          for package in self.packages.values():
+...              result += package.size
+...          return result
+
+The constructor method initializes a package dictionary that contains the package objects available in this repository instance. Initialize the dictionary in the constructor to ensure that every instance of the Repository class has its own dictionary.
+
+Then define a add_package method that takes the Package object as a parameter, and add it to the dictionary using the Package Name property as the key.
+
+Finally, define a total_size method that calculates the total size of all the packages in the repository. This method iterates through the values in the repository dictionary and adds together the size property of each package object included in the dictionary to return the sum at the end. In this example, we are using the Package property within the Repository class. It also calls the values() method on the package dictionary instance. Composition allows you to use an object as a property, as well as access to all of its properties and methods.

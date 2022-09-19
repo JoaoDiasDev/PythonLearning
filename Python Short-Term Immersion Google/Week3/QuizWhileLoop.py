@@ -1,10 +1,6 @@
 # 2.
 # Question 2
 # Fill in the blanks so that the print_prime_factors function outputs all prime factors of the number. A prime factor is a decimal number and divides another number without the rest.
-
-from audioop import mul
-
-
 def print_prime_factors(number):
     # Start with two, which is the first prime
     factor = 2

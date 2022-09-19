@@ -1,0 +1,6 @@
+Supplemental materials for code reuse (optional)
+Supplementary Resources for Code Reuse
+The official Python documentation lists all the modules included in the standard library. There is also a turtle inside.
+
+Pylpi is a Python repository and an index of numerous modules developed by Python programmers around the world. https://pypi.org/
+

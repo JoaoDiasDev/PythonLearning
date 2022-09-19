@@ -2,9 +2,6 @@
 # Question 1
 # Fill in the missing parts to finish writing the function. The color_translator function takes the color name and outputs a hexadecimal value. Since we currently only support 3 additional base colors (red, green, and blue), it returns 'unknown' for all other colors.
 
-from wsgiref.simple_server import demo_app
-
-
 def color_translator(color):
     if color == "red":
         hex_color = "#ff0000"
@@ -81,7 +78,7 @@ def format_name(first_name, last_name):
     elif (first_name != "" or last_name != ""):
         return ("Name: " + first_name + last_name)
     elif (first_name == "" or last_name == ""):
-        return ("Name: ")
+        return ("")
 
 
 print(format_name("Ernest", "Hemingway"))
@@ -115,10 +112,20 @@ print(longest_word("chair", "couch", "table"))
 print(longest_word("bed", "bath", "beyond"))
 print(longest_word("laptop", "notebook", "desktop"))
 
+# Question 8
+# What’s the output of this code?
+
+
+def sum(x, y):
+    return (x+y)
+
+
+print(sum(sum(1, 2), sum(3, 4)))
 
 # 10.
 # Question 10
 # The fractional_part function divides the molecule into denominators and returns only the decimal part (a number between 0 and 1). Complete the creation of the body of the function so that it returns the correct number. Note: Dividing by 0 throws an error, so if the denominator is 0, the function should return 0 instead of dividing.
+
 
 def fractional_part(numerator, denominator):
     if (denominator == 0):

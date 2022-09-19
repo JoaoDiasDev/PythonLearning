@@ -1,0 +1,34 @@
+Enhancing Python with Modules
+Python modules are separate files that contain classes, functions, and other data, allowing you to import and use these methods and classes in your own code. Python comes with a lot of modules by default. These modules are called the Python Standard Library. You can use these modules by using the module name after the import keyword. For example, import the module random and then call the randint function from within it.
+
+>>> import random
+>>> random.randint(1,10)
+8
+>>> random.randint(1,10)
+7
+>>> random.randint(1,10)
+1
+
+This function takes two integer parameters and returns a random integer between the values you passed. In this case, it's 1 and 10. You can see that calling a function from a module is very similar to calling a method from a class. Here, too, I use dot notation to put a period between the module and the function name.
+
+Let's look at another module, datetime. This module is very useful when working with dates and times.
+
+>>> import datetime
+>>> now = datetime.datetime.now()
+>>> type(now)
+<class 'datetime.datetime'>
+>>> print(now)
+2019-04-24 16:54:55.155199
+
+First, import the module. Next, we call the now() method, which belongs to the datetime class included in the datetime module. This method creates an instance of the datetime class for the current date and time. This instance has several methods that you can call.
+
+>>> print(now)
+2019-04-24 16:54:55.155199
+>>> now.year
+2019
+>>> print(now + datetime.timedelta(days=28))
+2019-05-22 16:54:55.155199
+
+When you call the print function as an instance of the datetime class, the date and time are printed in a specific format. This is because the datetime class has a __str__ method defined that produces a formatted string that you can see here. You can also call the properties and methods of the class directly, such as now.year, which returns the year property of the instance.
+
+Finally, you can access other classes contained in the datetime module, such as the timedelta class. This example creates an instance of the timedelta class with the parameter 28 days. It then adds this object to the previous instance of the datetime class and prints the result. This has the effect of adding 28 days to the original datetime object.

@@ -1,0 +1,59 @@
+Object inheritance
+Using the concept of inheritance in object-oriented programming allows you to build relationships between objects, group similar concepts, and reduce code duplication. Let's use the color and flavor properties to create a custom Fruit class.
+
+>>> class Fruit:
+...     def __init__(self, color, flavor):
+...         self.color = color
+...         self.flavor = flavor
+...
+
+I used constructors for color and flavor properties to define the Fruit class. Next, we'll define an Apple class with a new Grape class. Both want to inherit properties and actions from the Fruit class.
+
+>>> class Apple(Fruit):
+...     pass
+... 
+>>> class Grape(Fruit):
+...     pass
+... 
+
+Python uses parentheses in class declarations to ensure that classes inherit from the Fruit class. Therefore, this example instructs the computer that both the Apple class and the Grape class inherit from the Fruit class. This means that both have the same constructor methods that set the color and flavor properties. You can now create instances of the Apple and Grape classes.
+
+>>> granny_smith = Apple("green", "tart")
+>>> carnelian = Grape("purple", "sweet")
+>>> print(granny_smith.flavor)
+tart
+>>> print(carnelian.color)
+purple
+
+Inheritance allows you to define properties or methods that are shared by all types of fruits without having to define them individually in each fruit class. You can then define specific properties or methods that are specific to specific types of fruit. This time, let's look at another example of an animal.
+
+>>> class Animal:
+...     sound = ""
+...     def __init__(self, name):
+...         self.name = name
+...     def speak(self):
+...         print("{sound} I'm {name}! {sound}".format(
+...             name=self.name, sound=self.sound))
+... 
+>>> class Piglet(Animal):
+...     sound = "Oink!"
+... 
+>>> class Cow(Animal):
+...     sound = "Moooo"
+...
+
+We have defined a parent class, Animal, and we use two animal types that inherit from that class. Piglet and Cow. The parent Animal class has a property that stores the sounds that the animal makes, and the constructor class takes the name that is assigned to the instance being created. There is also a speak method that prints the animal's name along with the sounds it makes. I defined the Piglet and Cow classes that inherited from the Animal class and set the sound properties for each animal type. Now you can create instances of the Piglet and Cow classes and create the sounds of those animals.
+
+>>> hamlet = Piglet("Hamlet")
+>>> hamlet.speak()
+Oink! I'm Hamlet! Oink!
+... 
+>>> class Cow(Animal):
+...     sound = "Moooo"
+... 
+>>> milky = Cow("Milky White")
+>>> milky.speak()
+Moooo I'm Milky White! Moooo
+
+Create an instance of the Piglet and Cow classes and set the name of the instance. The formatted string is then printed by calling the speak method on each instance. This includes the name of the instance you assigned, along with the sound that the animal type makes.
+

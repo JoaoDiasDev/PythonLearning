@@ -1,0 +1,13 @@
+Jupyter notebook help (optional)
+Jupyter Notebook Help
+We aimed to make Jupyter notebooks easy to use. However, if you get stuck, you can find more information here.
+
+If you still need help, you can find help in the discussion forums! Use the forums to ask questions and get answers from fellow learners.
+
+To learn more about Jupyter notebooks as a technology, check out the following resources:
+
+Jupyter Notebook Tutorial, datacamp.com https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook
+
+How to use Jupyter Notebooks, codeacademy.com https://www.codecademy.com/articles/how-to-use-jupyter-notebooks
+
+Teaching and Learning Using Jupyter, University Professors Using Jupyter https://jupyter4edu.github.io/jupyter-edu-book/

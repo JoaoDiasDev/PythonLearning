@@ -1,0 +1,39 @@
+Class and Method cheat sheet (optional)
+Class and Method Cheat Sheet
+In the last few videos we've seen how to define classes and methods in Python. Here you can find a summary of everything we've covered, so you can refer to it whenever you need a review.
+
+Defining classes and methods
+class ClassName:
+    def method_name(self, other_parameters):
+        body_of_method
+
+Classes and Instances
+A class defines the behavior of all instances of a particular class.
+
+Each variable in a particular class is an instance or an object.
+
+An object can have properties that store information about the object.
+
+You can call a method to make the object work.
+
+The first parameter (self) of the method represents the current instance.
+
+Methods are similar to functions, but can only be used through classes.
+
+Special Methods
+The special method starts and ends with __.
+
+Special methods have specific names, such as __init__ for constructors or __str__ for conversion to strings.
+
+Document classes, methods, and functions
+You can use a docstring immediately after the definition to add documents to classes, methods, and functions. See the following:
+
+class ClassName:
+    """Documentation for the class."""
+    def method_name(self, other_parameters):
+        """Documentation for the method."""
+        body_of_method
+        
+def function_name(parameters):
+    """Documentation for the function."""
+    body_of_function

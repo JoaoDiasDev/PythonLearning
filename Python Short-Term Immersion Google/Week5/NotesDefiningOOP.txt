@@ -1,0 +1,2 @@
+Defining Object-Oriented Programming
+In object-oriented programming, concepts are modeled as classes and objects. Ideas are defined using classes, and instances of these classes are called objects. Almost everything in Python, including strings, lists, dictionaries, and numbers, is an object. When you create a list in Python, you create an object, which is an instance of a list class that represents the concept of a list. The class also has related properties and methods. A property is an attribute of a class and a method is a function that is part of a class.

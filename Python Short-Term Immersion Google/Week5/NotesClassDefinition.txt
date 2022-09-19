@@ -1,0 +1,24 @@
+Class definition (optional)
+Similar to how you define a function, you can create and define classes in Python. It starts with the class keyword, followed by the class name and colon. Python style guidelines recommend that class names start with uppercase letters. The class definition line is followed by the class body indented to the right. You can define the properties of a class within the class body.
+
+Let's take an example of an Apple class.
+
+>>> class Apple:
+...     color = ""
+...     flavor = ""
+... 
+
+You can assign it to a variable to create a new instance of the new class. This is done by calling the class name as if it were a function. You can access it using dot notation to set the properties of an instance of the class. You can use dot notation to set or retrieve object properties, as well as call methods that are specific to a class.
+
+>>> jonagold = Apple()
+>>> jonagold.color = "red"
+>>> jonagold.flavor = "sweet"
+
+You created an Apple instance named jonagold and set the color and flavor properties for this Apple object. You can create another instance of Apple and set different properties to distinguish two different apple varieties from each other.
+
+>>> golden = Apple()
+>>> golden.color = "Yellow"
+>>> golden.flavor = "Soft"
+
+Now we have another Apple object called golden that also has color and flavor properties. However, these properties have different values.
+

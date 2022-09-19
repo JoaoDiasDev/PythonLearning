@@ -1,0 +1,22 @@
+Final Project Help
+Project Goals 
+Create a dictionary with words and word frequencies that you can pass to generate_from_frequencies functions of the WordCloud class.
+
+If you have a dictionary, use this code to create a word cloud image.
+
+cloud = wordcloud.WordCloud()
+cloud.generate_from_frequencies(frequencies)
+cloud.to_file("myfile.jpg")
+
+hings to remember 
+All punctuation marks should be removed before processing the text. To do this, you can use the isalpha() method to look at each line of text character-by-character. Checks whether a letter is a letter.
+
+If you want to split a single line of text into words, you can use the split() method.
+
+Before you store a word in the frequency dictionary, make sure it's part of an "uninteresting" set of words (for example, "a", "the", "to", "if"). Set parameters in the function so that you can change them if necessary.
+
+Input file
+For input files, you must provide a file that contains only text. For the text itself, you can copy and paste the contents of the website of your choice. Alternatively, you can use a site like Project Gutenberg(https://www.gutenberg.org/)  to find books that are available online. You can see what word cloud you can get from famous books like Shakespeare's plays or Jane Austen's novels.
+
+Jupyter Notebook Help
+If you need help with Jupyter notebooks, you can check out this help page. https://learner.coursera.help/hc/en-us/articles/360004995312-Solve-problems-with-Jupyter-Notebooks

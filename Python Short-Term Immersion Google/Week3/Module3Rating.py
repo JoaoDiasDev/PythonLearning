@@ -52,7 +52,7 @@ print(digits(0))    # Should print 1
 
 def multiplication_table(start, stop):
     for x in range(start, stop + 1):
-        for y in range(stop, stop + 1):
+        for y in range(start, stop + 1):
             print(str(x*y), end=" ")
         print()
 
@@ -106,16 +106,44 @@ print(even_numbers(1))  # No numbers displayed
 print(even_numbers(3))  # Should be 2
 print(even_numbers(0))  # No numbers displayed
 
+# Question 7
+# The following code raises an error when executed. What's the reason for the error?
+
 
 def decade_counter():
     while year < 50:
         year += 10
     return year
 
+# R: Failure to initialize variables
 
-print(decade_counter())
+# Question 8
+# What is the value of x at the end of the following code?
 
+
+for x in range(1, 10, 3):
+    print(x)
+
+#R: 7
+
+#     9.
+# Question 9
+# What is the value of y at the end of the following code?
 
 for x in range(10):
     for y in range(x):
-        print(str(y) + 'value y')
+        print(y)
+
+#R: 8
+
+# 10.
+# Question 10
+# How does this function need to be called to print yes, no, and maybe as possible options to vote for?
+
+
+def votes(params):
+    for vote in params:
+        print("Possible option:" + vote)
+
+
+# R: votes(['yes','no','maybe'])

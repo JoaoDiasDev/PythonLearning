@@ -1,0 +1,3 @@
+What is a method?
+When you call a method on an object, a function is executed that acts on a specific instance property of the class. This means that, for example, if you call a method on a list, only that instance of the list is modified, and not all lists are modified globally. You can define methods within a class by creating a function within the class definition. These instance methods can use a parameter named self that represents the instance in which the method is running. This allows you to access the properties of the instance using dot notation such as the self.name, which accesses the name property for a particular instance of the class object. If you have a variable that contains different values for different instances, it is called an instance variable.
+

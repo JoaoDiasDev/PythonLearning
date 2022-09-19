@@ -10,9 +10,6 @@
 # Multiply the result by 2 times to calculate the round-trip distance in kilometers, fill in the blanks to print the results.
 
 # 1) Complete the function to return the result of the conversion
-from cgitb import small
-
-
 def convert_distance(miles):
     km = (miles * 1.6)  # approximately 1.6 km in 1 mile
     return km
