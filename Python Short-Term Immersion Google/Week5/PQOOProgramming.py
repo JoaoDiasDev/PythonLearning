@@ -2,11 +2,7 @@
 # Question 1
 # Let's test our knowledge of how to use dot notation to access the methods and properties of an object. Let's say you have a class called Birds. Birds have two properties: color and number. Birds also has a method called count() that counts the number of birds (adding a value to the number). Which of the following lines of code correctly outputs the number of birds? The number of birds is 0 until counted!
 
-from itertools import count
-from macpath import join
-
-
-print(bluejay.number.count())
+# print(bluejay.number.count())
 
 # 2.
 # Question 2
